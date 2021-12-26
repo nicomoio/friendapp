@@ -1,0 +1,15 @@
+
+<div class="jumbotron">
+ <h1 class="display-4"><%= @friend.first_name %> <%= @friend.last_name %>, <%= @age %> years old.</h1>
+ <p class="lead"><%= @friend.birth.strftime('%d-%m-%Y') %> | <%= @friend.dni %></p> 
+ <br>
+ <%= link_to 'Edit', edit_friend_path(@friend), class:"btn btn-secondary" %> 
+ <%= link_to 'Back', friends_path, class:"btn btn-dark" %>
+ 
+</div>
+
+
+
+
+
+
